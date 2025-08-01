@@ -1,5 +1,4 @@
 function NamNhuan (year) {
-
     if (year % 100 === 0) {
         if (year % 400 === 0) {
             return `${year} la nam nhuan`;
@@ -23,9 +22,6 @@ function Thangtrongngay(month, year) {
     const daysInMonth = [31, (NamNhuan(year).includes("khong la nam nhuan") ? 28 : 29), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
     return `Thang ${month} nam ${year} co ${daysInMonth[month - 1]} ngay.`;
 }
-
-
-
 
 
 let year = parseInt(prompt("Nhap nam: "));
