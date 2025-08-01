@@ -3,7 +3,7 @@ function NamNhuan (year) {
         if (year % 400 === 0) {
             return `${year} la nam nhuan`;
         } else {
-            return `${year} la khong nam nhuan`;
+            return `${year} khong la nam nhuan`;
         }
     } else {
         if (year % 4 === 0) {
